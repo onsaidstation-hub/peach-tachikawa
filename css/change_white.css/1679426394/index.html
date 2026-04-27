@@ -1,704 +1,704 @@
-@charset "utf-8";
-
-/*
-# =================================================================
-# 繝輔か繝ｳ繝医ｻ繝輔か繝ｳ繝医ｮ濶ｲ
-# =================================================================
-*/
-
-body,
-input,
-textarea{
-	font-family: 'Yu Gothic Medium', '貂ｸ繧ｴ繧ｷ繝繧ｯ Medium', '貂ｸ繧ｴ繧ｷ繝繧ｯ菴', 'Yu Gothic', YuGothic, '繝偵Λ繧ｮ繝手ｧ偵ざ繧ｷ繝繧ｯ Pro', 'Hiragino Kaku Gothic Pro', '繝｡繧､繝ｪ繧ｪ', Meiryo, Osaka, 'ｼｭｼｳ ｼｰ繧ｴ繧ｷ繝繧ｯ', 'MS PGothic', sans-serif;
-	font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "繝偵Λ繧ｮ繝手ｧ偵ざ ProN W3", "繝｡繧､繝ｪ繧ｪ", Meiryo, "ｼｭｼｳ ｼｰ繧ｴ繧ｷ繝繧ｯ", "MS PGothic", sans-serif;
-	font-family: "貂ｸ譏取悃", YuMincho, "Hiragino Mincho ProN W3", "繝偵Λ繧ｮ繝取取悃 ProN W3", "Hiragino Mincho ProN", "HG譏取悃E", "ｼｭｼｳ ｼｰ譏取悃", "ｼｭｼｳ 譏取悃", serif;
-	font-family: "繝｡繧､繝ｪ繧ｪ", "Meiryo", arial, "繝偵Λ繧ｮ繝手ｧ偵ざ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ｼｭｼｳ ｼｰ繧ｴ繧ｷ繝繧ｯ", "MS PGothic", Sans-Serif;
-}
-
-.min{
-	font-family: "貂ｸ譏取悃", YuMincho, "Hiragino Mincho ProN W3", "繝偵Λ繧ｮ繝取取悃 ProN W3", "Hiragino Mincho ProN", "HG譏取悃E", "ｼｭｼｳ ｼｰ譏取悃", "ｼｭｼｳ 譏取悃", serif;
-	font-family: "繝｡繧､繝ｪ繧ｪ", "Meiryo", arial, "繝偵Λ繧ｮ繝手ｧ偵ざ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ｼｭｼｳ ｼｰ繧ｴ繧ｷ繝繧ｯ", "MS PGothic", Sans-Serif;
-}
-
-.suu{
-	font-family: 'Marcellus', serif;
-	font-family: 'Martel', serif;
-	font-style: italic;
-}
-
-.eng{
-	font-family: 'Italianno', cursive;
-	font-family: 'Cinzel', serif;
-}
-
-/*
-# =================================================================
-# 蜈ｱ騾夊ｨｭ螳
-# =================================================================
-*/
-
-body{
-	color: #333;/*繝輔か繝ｳ繝医ｮ蝓ｺ譛ｬ濶ｲ*/
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center top;
-}
-
-
-a{
-	color: #111;/*繝ｪ繝ｳ繧ｯ縺ｮ蝓ｺ譛ｬ濶ｲ*/
-}
-
-a:hover,
-a:active,
-a:focus{
-	color: #000;
-}
-
-/*襍､譁蟄暦ｼ域ｳｨ諢冗ｭ会ｼ*/
-.red {
-	color: #FF0000;
-}
-
-/*阮譁蟄暦ｼ域律莉倥ｻ譎る俣遲会ｼ*/
-.usu {
-	color: #AAA;
-}
-
-/*繝懊ち繝ｳｼ医せ繧ｱ繧ｸ繝･繝ｼ繝ｫ遲会ｼ*/
-
-.btn_01 {
-	background: #AC0032;/*繝懊ち繝ｳ1縺ｮ蝓ｺ譛ｬ濶ｲ*/
-}
-
-.btn_01 a{
-	color: #fff;
-}
-
-.btn_01_h,
-.btn_01:hover,
-.btn_01:active,
-.btn_01:focus {
-	background: #E0003F;/*繝懊ち繝ｳ1縺ｮ蝓ｺ譛ｬ濶ｲｼ郁埋縺濶ｲｼ*/
-	color: #fff;
-}
-
-/*繝懊ち繝ｳｼ磯∽ｿ｡遲会ｼ*/
-
-.btn_02{
-	background: #F3F3F3;
-	color: #333;
-	border: 1px solid #CCC;
-}
-
-/*隕句ｺ縺*/
-
-h3{
-	text-align: center;
-	width: 100%;
-	background-color: #F9F9F9;
-	color: #333;
-	margin: 1px 1px 24px;
-	padding: 10px 0;
-	font-size: 1.8rem;
-	border: 1px solid #CCC;
-}
-
-/*繧ｹ繧ｯ繝ｭ繝ｼ繝ｫ繝舌ｼ縺ｮ蝓ｺ譛ｬ濶ｲ*/
-
-::-webkit-scrollbar{
-  width: 5px;
-}
-::-webkit-scrollbar-track{
-  background: #EEE;/*繧ｹ繧ｯ繝ｭ繝ｼ繝ｫ繝舌ｼ縺ｮ閭梧勹濶ｲ*/
-  border: none;
-  border-radius: 10px;
-  box-shadow: inset 0 0 2px #CCC;/*繧ｹ繧ｯ繝ｭ繝ｼ繝ｫ繝舌ｼ縺ｮ閭梧勹縺ｮ蠖ｱ濶ｲ*/
-}
-::-webkit-scrollbar-thumb{
-  background: #AAA;/*繧ｹ繧ｯ繝ｭ繝ｼ繝ｫ繝舌ｼ縺ｮ濶ｲ*/
-  border-radius: 10px;
-  box-shadow: none;
-}
-
-/*繝繝ｼ繝悶Ν縺ｮ蝓ｺ譛ｬ濶ｲ*/
-
-.table-block{
-	border-top: 1px solid #AAA;
-}
-th{
-	border: 1px solid #AAA;
-	background-color: #F9F9F9;/*陦ｨ鬘後ｮ閭梧勹濶ｲ*/
-	color: #333;
-	text-align: left;
-	font-weight: normal;
-}
-
-@media (max-width : 767px){
-.th_title{
-	background-color: #F9F9F9;
-}
-}
-
-
-td{
-	border: 1px solid #CCC;
-	background-color: rgba(255,255,255,0.7); /*繧ｳ繝ｳ繝繝ｳ繝縺ｮ閭梧勹濶ｲ繝ｻ騾乗主ｺｦ*/
-	text-align: left;
-}
-
-input,
-select,
-textarea{
-	border: 1px solid #ddd;
-	background-color: #fff;/*繝繧ｭ繧ｹ繝医お繝ｪ繧｢縺ｮ閭梧勹濶ｲ*/
-	color: #333;/*繝繧ｭ繧ｹ繝医お繝ｪ繧｢縺ｮ譁蟄苓牡*/
-	font-size: 1.0em;
-}
-
-.paging a.current {
-	text-decoration: none;
-	font-size: 1.5em;
-	background-color: #111;/*繝壹ｼ繧ｸ繝ｳ繧ｰ縺ｮ濶ｲ*/
-	border: 1px solid #999;
-}
-
-/*
-# =================================================================
-# 繝繝ｼ繝槭ｮ蝓ｺ譛ｬ濶ｲ
-# =================================================================
-*/
-/*蝓ｺ譛ｬ濶ｲ1縲繧ｿ繧､繝医Ν闍ｱ隱槭ｻ繝繧ｭ繧ｹ繝医ち繧､繝医Ν*/
-.color01{
-	color: #AC0032;/*蝓ｺ譛ｬ濶ｲ*/
-}
-
-/*蝓ｺ譛ｬ濶ｲ2縲繝懊ち繝ｳ閭梧勹濶ｲ*/
-.color02{
-	color: #62552C;/*蝓ｺ譛ｬ濶ｲ縺ｮ證励＞濶ｲ*/
-}
-
-/*蝓ｺ譛ｬ濶ｲ3縲繝懊ち繝ｳ繝帙ヰ繝ｼ濶ｲ繝ｻ譁蟄苓牡*/
-.color03{
-	color: #AC0032;/*蝓ｺ譛ｬ濶ｲ縺ｮ譏弱ｋ縺濶ｲ*/
-}
-
-/*蝓ｺ譛ｬ濶ｲ4縲蠑ｷ隱ｿ濶ｲ縲*蜃ｺ蜍､譎る俣縺ｮ閭梧勹濶ｲ*/
-.color04{
-	color: #920D14;
-}
-
-/*蝓ｺ譛ｬ濶ｲ5*/
-.color05{
-	color: #f2efed;
-}
-
-/*蝓ｺ譛ｬ濶ｲ6*/
-.color06{
-	color: #e5dfdc;
-}
-
-/*
-# =================================================================
-# 繝倥ャ繝繝ｼ
-# =================================================================
-*/
-
-.header_wrap{
-	background-color: #FFF;/*繝倥ャ繝繝ｼ縺ｮ閭梧勹濶ｲ*/
-}
-
-.header_wrap {
-	color: #333;/*繝繧ｭ繧ｹ繝医ｮ蝓ｺ譛ｬ濶ｲ*/
-}
-
-.header_wrap a{
-	color: #333;/*繝ｪ繝ｳ繧ｯ縺ｮ蝓ｺ譛ｬ濶ｲ*/
-}
-
-.header_wrap a:hover,
-.header_wrap a:active,
-.header_wrap a:focus{
-	color: #000;
-}
-
-.slider1 {
-	background-color: transparent; /*繝｡繧､繝ｳ逕ｻ蜒上ｮ閭梧勹濶ｲ*/
-}
-
-.fade_logo {
-	max-width: 600px; *繝ｭ繧ｴ縺ｮ螟ｧ縺阪＆*/
-	max-height: 240px;
-	top: 50%;
-}
-
-@media (max-width : 768px){
-.fade_logo {
-	min-width: 300px; *繝ｭ繧ｴ縺ｮ螟ｧ縺阪＆*/
-}
-}
-
-/*
-# =================================================================
-# 繧ｳ繝ｳ繝繝ｳ繝
-# =================================================================
-*/
-
-.main_wrap::before{/*iPhone縺ｮ閭梧勹濶ｲ*/
-	background: url(/images_shop/bg_all.jpg) no-repeat center top /cover;
-	content: "";
-	height: 100vh;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: -1;
-	background-color: #FFF;
-}
-
-.bg{
-	background-color: rgba(255,255,255,0.7); /*繧ｳ繝ｳ繝繝ｳ繝縺ｮ閭梧勹濶ｲ繝ｻ騾乗主ｺｦ*/
-}
-
-/*
-# =================================================================
-# 繧ｰ繝ｭ繝ｼ繝舌Ν繝｡繝九Η繝ｼ
-# =================================================================
-*/
-
-.gnav_wrap{
-	background-color: #FFF;/*繝｡繝九Η繝ｼ縺ｮ閭梧勹濶ｲ*/
-	border-top-color: #CCC;/*繝｡繝九Η繝ｼ譫邱夊牡*/
-	border-bottom-color: #CCC;/*繝｡繝九Η繝ｼ譫邱夊牡*/
-}
-
-.gnav_cont{
-	background-color: #FFF;/*繝｡繝九Η繝ｼ縺ｮ閭梧勹濶ｲ*/
-}
-
-.gnav_cont li a{
-	color: #000;/*繝｡繝九Η繝ｼ濶ｲ*/
-	border-right-width: 1px;
-	border-right-style: solid;
-	border-right-color: #CCC;/*繝｡繝九Η繝ｼ譫邱夊牡*/
-; 	border-right-width: 1px;
-}
-
-.gnav_cont li a .eng{
-	color: #AC0032;/*闍ｱ隱槭Γ繝九Η繝ｼ濶ｲ*/
-}
-
-@media (max-width : 767px){
-.gnav_btn{
-	position: fixed;/*繧ｹ繝槭帙Γ繝九Η繝ｼ*/
-	top: 0;
-	right: 0;
-	z-index: 100;
-	width: 50px;
-	height: 50px;
-	margin: 0;
-	background: #EEE;
-	color: #000;/*繧ｹ繝槭帙Γ繝九Η繝ｼﾃ励ｮ濶ｲ*/
-	font-size: 1.1rem;
-	line-height: 50px;
-	vertical-align: middle;
-	cursor: pointer;
-}
-.gnav_btn_icon-open{
-	display: block;
-	position: absolute;
-	top: 45%;
-	left: 15px;
-	width: 20px;
-	height: 2px;
-	margin-top: -1px;
-	background-color: #000;/*繧ｹ繝槭帙Γ繝九Η繝ｼ3譛ｬ邱壹ｮ濶ｲ*/
-}
-.gnav_btn_icon-open::before,
-.gnav_btn_icon-open::after{
-	position: absolute;
-	top: 45%;
-	left: 0;
-	width: 20px;
-	height: 2px;
-	background-color: #000;/*繧ｹ繝槭帙Γ繝九Η繝ｼ3譛ｬ邱壹ｮ濶ｲ*/
-	content: "";
-}
-.gnav_inner li{
-	border-bottom: 1px solid #CCC;/*繧ｹ繝槭帙Γ繝九Η繝ｼ縺ｮ繝ｩ繧､繝ｳ濶ｲ*/
-}
-}
-
-/*
-# =================================================================
-# 繧ｵ繝悶Γ繝九Η繝ｼ
-# =================================================================
-*/
-
-.gnav_sub_wrap {
-	background-color: #F5F5F5;/*繝｡繝九Η繝ｼ縺ｮ閭梧勹濶ｲ*/
-}
-
-.gnav_sub_inner li a{
-	color: #333;/*繝｡繝九Η繝ｼ縺ｮ譁蟄苓牡*/
-}
-
-.gnav_sub_inner li a:hover,
-.gnav_sub_inner li a:active,
-.gnav_sub_inner li a:focus,
-.gnav_sub_inner li:hover > a{
-	color: #AC0032;/*繝｡繝九Η繝ｼ縺ｮ譁蟄苓牡*/
-}
-
-.gnav_sub_inner li a::before{
-	border-left-color: #AC0032;/*荳芽ｧ定牡*/
-}
-
-.gnav_sub {
-	border-bottom:1px solid #AAA;/*譛荳矩Κ邱壹ｮ濶ｲ*/
-}
-
-/*
-# =================================================================
-# 繧ｹ繝槭帙Γ繝九Η繝ｼ
-# =================================================================
-*/
-
-.gnav_sp_wrap {
-	width: 100%;
-}
-
-.gnav_sp {
-	margin: 0;
-	padding: 0;
-}
-
-.gnav_sp_inner {
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #DDD;
-}
-
-.gnav_sp ul {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	border-width: 1px;
-	border-style: solid;
-	border-color: #DDD;
-}
-
-.gnav_sp ul li {
-	float: left;
-	width: 33.3%;
-	list-style: none;
-	background-color: #FFF;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	border-top-width: 1px;
-	border-top-style: solid;
-	border-top-color: #DDD;
-	border-left-width: 1px;
-	border-left-style: solid;
-	border-left-color: #DDD;
-}
-
-.gnav_sp li:first-child {
-	border-left-width: 1px;
-	border-left-style: solid;
-	border-left-color: #DDD;
-}
-
-.gnav_sp li a {
-	font-size: 0.8em;
-	color: #333;
-	display:block;
-	width:100%;
-	padding:10px 0 10px 0;
-}
-
-.gnav_sp li a .eng{
-	color:#AC0032;
-}
-
-/*
-# =================================================================
-# 蟷ｴ鮨｢隱崎ｨｼ繝壹ｼ繧ｸ
-# =================================================================
-*/
-
-.enter_box{
-	text-align: center;
-}
-
-.enter{
-	text-align: center;
-	border: 1px solid #333;
-	width: 300px;
-	display: inline-block;
-}
-
-.enter a{
-	display: block;
-	color: #333;
-	background-color: #FFF;
-	padding: 10px;
-}
-
-.enter a:hover,
-.enter a:active,
-.enter a:focus{
-	color: #000;
-	background-color: #F3F3F3;
-}
-
-/*繧ｳ繝ｳ繧ｻ繝励ヨ縺ｮ譫邱*/
-.box_style01{
-	padding: 6px;
-	background-image: linear-gradient(
-		-45deg,
-		#FFF 25%,
-		#CCC 25%, #CCC 50%,
-		#FFF 50%, #FFF 75%,
-		#CCC 75%, #CCC
-	);
-	background-size: 4px 4px;
-	background-repeat: repeat;
-}
-
-/*
-# =================================================================
-# 繧ｭ繝｣繧ｹ繝BOX
-# =================================================================
-*/
-
-.cast_box{
-	background: #FFF;
-	box-shadow: 0px 0px 8px #DDD;
-}
-
-.cast_box img{
-	padding: 8px;
-}
-
-.cast_box_info {
-}
-
-.cast_box_catch {
-	height: 24px;
-	color: #AC0032;
-}
-
-.cast_time {
-	background-color: #EEE;/*蜃ｺ蜍､譎る俣縺ｮ閭梧勹濶ｲ*/
-	color: #333;
-}
-
-
-
-.diary_box_catch {
-	height: 24px;
-	color: #AC0032;
-}
-
-.slider_cast{
-	background: rgba(255, 255, 255, 1);
-}
-
-/*
-# =================================================================
-# 繝励Ο繝輔ぅ繝ｼ繝ｫ
-# =================================================================
-*/
-
-.profile_box_type ul li{
-	border: 1px solid #AC0032;
-}
-
-/*
-# =================================================================
-# 譁咎代す繧ｹ繝繝
-# =================================================================
-*/
-
-.price_box{
-	background-color: rgba(255,255,255,0.7);/*繧ｳ繝ｳ繝繝ｳ繝縺ｮ閭梧勹濶ｲ繝ｻ騾乗主ｺｦ*/
-}
-
-.price_box .col{
-	text-align: center;
-	font-family: 'Marcellus', serif;
-	font-family: 'Martel', serif;
-	font-style: italic;
-}
-
-.price_box .price_box_title{
-	color: #AC0032;
-}
-
-.price_box .price_box_price{
-}
-
-.price_box_setsumei{
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.price_box_bikou{
-	margin-top: 20px;
-	margin-bottom: 20px;
-	color: #555;
-}
-
-.basic_box{
-	border: 1px solid #CCC;
-	background-color: rgba(255,255,255,0.7);/*蝓ｺ譛ｬ繝励Ξ繧､縺ｮ閭梧勹濶ｲ繝ｻ騾乗主ｺｦ*/
-}
-
-.basic_box_non{
-	border: 1px solid #CCC;
-	background-color: rgba(255,255,255,0.7);/*蝓ｺ譛ｬ繝励Ξ繧､縺ｮ閭梧勹濶ｲ繝ｻ騾乗主ｺｦ*/
-	color: #DDD;/*蝓ｺ譛ｬ繝励Ξ繧､荳榊庄閭ｽ縺ｮ蝣ｴ蜷医ｮ譁蟄苓牡*/
-}
-
-.option_box{
-	border: 1px solid #CCC;
-	background-color: rgba(255,255,255,0.7);/*繧ｪ繝励す繝ｧ繝ｳ繝励Ξ繧､縺ｮ閭梧勹濶ｲ繝ｻ騾乗主ｺｦ*/
-}
-
-/*
-# =================================================================
-# 繝代Φ螻代Μ繧ｹ繝
-# =================================================================
-*/
-
-.breadcrumb-list_wrap{
-	border-top: 1px solid #CCC;
-	background: #F9F9F9;
-}
-
-.breadcrumb-list li a{
-	color: #000;/*繝ｪ繝ｳ繧ｯ縺ｮ蝓ｺ譛ｬ濶ｲ*/
-}
-
-.breadcrumb-list li a:hover,
-.breadcrumb-list li a:active,
-.breadcrumb-list li a:focus{
-	color: #000;/*繝ｪ繝ｳ繧ｯ繝帙ヰ繝ｼ縺ｮ蝓ｺ譛ｬ濶ｲ*/
-}
-
-
-/*
-# =================================================================
-# 繝輔ャ繧ｿ繝ｼ
-# =================================================================
-*/
-
-/*繝輔ャ繧ｿ繝ｼ*/
-.footer_wrap{
-	background: #FFF;
-	font-size: 1.4rem;
-	line-height: 1.8em;
-	color: #333;/*譁蟄励ｮ蝓ｺ譛ｬ濶ｲ*/
- 	border-top-width: 1px;
-	border-top-style: solid;
-	border-top-color: #CCC;
-}
-
-/*荳芽ｧ*/
-.footer-navi li a::before{
-	border-left-color: #AC0032;
-}
-
-.footer_wrap a{
-	color: #333;/*繝ｪ繝ｳ繧ｯ縺ｮ蝓ｺ譛ｬ濶ｲ*/
-}
-
-.footer_wrap a:hover,
-.footer_wrap a:active,
-.footer_wrap a:focus{
-	color: #333;/*繝ｪ繝ｳ繧ｯ繝帙ヰ繝ｼ縺ｮ蝓ｺ譛ｬ濶ｲ*/
-}
-
-/*繧ｳ繝斐ｼ繝ｩ繧､繝*/
-.copyright_wrap{
-	padding: 10px;
-	background-color: #000;
-	color: #FFF;/*蝓ｺ譛ｬ濶ｲ*/
-}
-
-.copyright_wrap a,
-.copyright_wrap a:hover,
-.copyright_wrap a:active,
-.copyright_wrap a:focus{
-	color: #FFF;/*繝ｪ繝ｳ繧ｯ縺ｮ蝓ｺ譛ｬ濶ｲ*/
-}
-
-hr {
-	height: 1px;
-	border: none;
-	border-top: 1px #AAA solid;
-}
-
-/*繧ｹ繝槭帷畑譛荳矩Κ繝｡繝九Η繝ｼ*/
-
-.footer-panel ul{
-	border-left: 1px solid #CCC;
-	border-top: 1px solid #CCC;
-}
-
-.footer-panel li{
-	border-right: 1px solid #CCC;
-}
-
-.footer-panel li a{
-	color: #333;
-}
-
-.color_tel {
-	background-color: #FFF;
-}
-.color_line {
-	background-color: #FFF;
-}
-.color_top {
-	background-color: #FFF;
-}
-
-/*
-# =================================================================
-# 逕ｻ蜒乗僑螟ｧ繧ｨ繝輔ぉ繧ｯ繝
-# =================================================================
-*/
-
-figure {
-	overflow: hidden;
-}
-figure img {
-	transition: .3s;
-}
-a:hover figure img {
-	transform: scale(1.05);
-}
-/*
-     FILE ARCHIVED ON 20:52:53 Mar 21, 2023 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 13:24:27 Apr 26, 2026.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 0.937
-  exclusion.robots: 0.035
-  exclusion.robots.policy: 0.028
-  esindex: 0.007
-  cdx.remote: 47.214
-  LoadShardBlock: 90.155 (3)
-  PetaboxLoader3.datanode: 94.827 (5)
-  PetaboxLoader3.resolve: 69.599 (2)
-  load_resource: 817.313
-  loaddict: 738.176
+@charset "utf-8";
+
+/*
+# =================================================================
+# フォント・フォントの色
+# =================================================================
+*/
+
+body,
+input,
+textarea{
+	font-family: 'Yu Gothic Medium', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-family: "メイリオ", "Meiryo", arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+}
+
+.min{
+	font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-family: "メイリオ", "Meiryo", arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+}
+
+.suu{
+	font-family: 'Marcellus', serif;
+	font-family: 'Martel', serif;
+	font-style: italic;
+}
+
+.eng{
+	font-family: 'Italianno', cursive;
+	font-family: 'Cinzel', serif;
+}
+
+/*
+# =================================================================
+# 共通設定
+# =================================================================
+*/
+
+body{
+	color: #333;/*フォントの基本色*/
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+
+a{
+	color: #111;/*リンクの基本色*/
+}
+
+a:hover,
+a:active,
+a:focus{
+	color: #000;
+}
+
+/*赤文字（注意等）*/
+.red {
+	color: #FF0000;
+}
+
+/*薄文字（日付・時間等）*/
+.usu {
+	color: #AAA;
+}
+
+/*ボタン（スケジュール等）*/
+
+.btn_01 {
+	background: #AC0032;/*ボタン1の基本色*/
+}
+
+.btn_01 a{
+	color: #fff;
+}
+
+.btn_01_h,
+.btn_01:hover,
+.btn_01:active,
+.btn_01:focus {
+	background: #E0003F;/*ボタン1の基本色（薄い色）*/
+	color: #fff;
+}
+
+/*ボタン（送信等）*/
+
+.btn_02{
+	background: #F3F3F3;
+	color: #333;
+	border: 1px solid #CCC;
+}
+
+/*見出し*/
+
+h3{
+	text-align: center;
+	width: 100%;
+	background-color: #F9F9F9;
+	color: #333;
+	margin: 1px 1px 24px;
+	padding: 10px 0;
+	font-size: 1.8rem;
+	border: 1px solid #CCC;
+}
+
+/*スクロールバーの基本色*/
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background: #EEE;/*スクロールバーの背景色*/
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 0 0 2px #CCC;/*スクロールバーの背景の影色*/
+}
+::-webkit-scrollbar-thumb{
+  background: #AAA;/*スクロールバーの色*/
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+/*テーブルの基本色*/
+
+.table-block{
+	border-top: 1px solid #AAA;
+}
+th{
+	border: 1px solid #AAA;
+	background-color: #F9F9F9;/*表題の背景色*/
+	color: #333;
+	text-align: left;
+	font-weight: normal;
+}
+
+@media (max-width : 767px){
+.th_title{
+	background-color: #F9F9F9;
+}
+}
+
+
+td{
+	border: 1px solid #CCC;
+	background-color: rgba(255,255,255,0.7); /*コンテンツの背景色・透明度*/
+	text-align: left;
+}
+
+input,
+select,
+textarea{
+	border: 1px solid #ddd;
+	background-color: #fff;/*テキストエリアの背景色*/
+	color: #333;/*テキストエリアの文字色*/
+	font-size: 1.0em;
+}
+
+.paging a.current {
+	text-decoration: none;
+	font-size: 1.5em;
+	background-color: #111;/*ページングの色*/
+	border: 1px solid #999;
+}
+
+/*
+# =================================================================
+# テーマの基本色
+# =================================================================
+*/
+/*基本色1　タイトル英語・テキストタイトル*/
+.color01{
+	color: #AC0032;/*基本色*/
+}
+
+/*基本色2　ボタン背景色*/
+.color02{
+	color: #62552C;/*基本色の暗い色*/
+}
+
+/*基本色3　ボタンホバー色・文字色*/
+.color03{
+	color: #AC0032;/*基本色の明るい色*/
+}
+
+/*基本色4　強調色　*出勤時間の背景色*/
+.color04{
+	color: #920D14;
+}
+
+/*基本色5*/
+.color05{
+	color: #f2efed;
+}
+
+/*基本色6*/
+.color06{
+	color: #e5dfdc;
+}
+
+/*
+# =================================================================
+# ヘッダー
+# =================================================================
+*/
+
+.header_wrap{
+	background-color: #FFF;/*ヘッダーの背景色*/
+}
+
+.header_wrap {
+	color: #333;/*テキストの基本色*/
+}
+
+.header_wrap a{
+	color: #333;/*リンクの基本色*/
+}
+
+.header_wrap a:hover,
+.header_wrap a:active,
+.header_wrap a:focus{
+	color: #000;
+}
+
+.slider1 {
+	background-color: transparent; /*メイン画像の背景色*/
+}
+
+.fade_logo {
+	max-width: 600px; *ロゴの大きさ*/
+	max-height: 240px;
+	top: 50%;
+}
+
+@media (max-width : 768px){
+.fade_logo {
+	min-width: 300px; *ロゴの大きさ*/
+}
+}
+
+/*
+# =================================================================
+# コンテンツ
+# =================================================================
+*/
+
+.main_wrap::before{/*iPhoneの背景色*/
+	background: url(/images_shop/bg_all.jpg) no-repeat center top /cover;
+	content: "";
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+	background-color: #FFF;
+}
+
+.bg{
+	background-color: rgba(255,255,255,0.7); /*コンテンツの背景色・透明度*/
+}
+
+/*
+# =================================================================
+# グローバルメニュー
+# =================================================================
+*/
+
+.gnav_wrap{
+	background-color: #FFF;/*メニューの背景色*/
+	border-top-color: #CCC;/*メニュー枠線色*/
+	border-bottom-color: #CCC;/*メニュー枠線色*/
+}
+
+.gnav_cont{
+	background-color: #FFF;/*メニューの背景色*/
+}
+
+.gnav_cont li a{
+	color: #000;/*メニュー色*/
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCC;/*メニュー枠線色*/
+; 	border-right-width: 1px;
+}
+
+.gnav_cont li a .eng{
+	color: #AC0032;/*英語メニュー色*/
+}
+
+@media (max-width : 767px){
+.gnav_btn{
+	position: fixed;/*スマホメニュー*/
+	top: 0;
+	right: 0;
+	z-index: 100;
+	width: 50px;
+	height: 50px;
+	margin: 0;
+	background: #EEE;
+	color: #000;/*スマホメニュー×の色*/
+	font-size: 1.1rem;
+	line-height: 50px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.gnav_btn_icon-open{
+	display: block;
+	position: absolute;
+	top: 45%;
+	left: 15px;
+	width: 20px;
+	height: 2px;
+	margin-top: -1px;
+	background-color: #000;/*スマホメニュー3本線の色*/
+}
+.gnav_btn_icon-open::before,
+.gnav_btn_icon-open::after{
+	position: absolute;
+	top: 45%;
+	left: 0;
+	width: 20px;
+	height: 2px;
+	background-color: #000;/*スマホメニュー3本線の色*/
+	content: "";
+}
+.gnav_inner li{
+	border-bottom: 1px solid #CCC;/*スマホメニューのライン色*/
+}
+}
+
+/*
+# =================================================================
+# サブメニュー
+# =================================================================
+*/
+
+.gnav_sub_wrap {
+	background-color: #F5F5F5;/*メニューの背景色*/
+}
+
+.gnav_sub_inner li a{
+	color: #333;/*メニューの文字色*/
+}
+
+.gnav_sub_inner li a:hover,
+.gnav_sub_inner li a:active,
+.gnav_sub_inner li a:focus,
+.gnav_sub_inner li:hover > a{
+	color: #AC0032;/*メニューの文字色*/
+}
+
+.gnav_sub_inner li a::before{
+	border-left-color: #AC0032;/*三角色*/
+}
+
+.gnav_sub {
+	border-bottom:1px solid #AAA;/*最下部線の色*/
+}
+
+/*
+# =================================================================
+# スマホメニュー
+# =================================================================
+*/
+
+.gnav_sp_wrap {
+	width: 100%;
+}
+
+.gnav_sp {
+	margin: 0;
+	padding: 0;
+}
+
+.gnav_sp_inner {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #DDD;
+}
+
+.gnav_sp ul {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #DDD;
+}
+
+.gnav_sp ul li {
+	float: left;
+	width: 33.3%;
+	list-style: none;
+	background-color: #FFF;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #DDD;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #DDD;
+}
+
+.gnav_sp li:first-child {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #DDD;
+}
+
+.gnav_sp li a {
+	font-size: 0.8em;
+	color: #333;
+	display:block;
+	width:100%;
+	padding:10px 0 10px 0;
+}
+
+.gnav_sp li a .eng{
+	color:#AC0032;
+}
+
+/*
+# =================================================================
+# 年齢認証ページ
+# =================================================================
+*/
+
+.enter_box{
+	text-align: center;
+}
+
+.enter{
+	text-align: center;
+	border: 1px solid #333;
+	width: 300px;
+	display: inline-block;
+}
+
+.enter a{
+	display: block;
+	color: #333;
+	background-color: #FFF;
+	padding: 10px;
+}
+
+.enter a:hover,
+.enter a:active,
+.enter a:focus{
+	color: #000;
+	background-color: #F3F3F3;
+}
+
+/*コンセプトの枠線*/
+.box_style01{
+	padding: 6px;
+	background-image: linear-gradient(
+		-45deg,
+		#FFF 25%,
+		#CCC 25%, #CCC 50%,
+		#FFF 50%, #FFF 75%,
+		#CCC 75%, #CCC
+	);
+	background-size: 4px 4px;
+	background-repeat: repeat;
+}
+
+/*
+# =================================================================
+# キャストBOX
+# =================================================================
+*/
+
+.cast_box{
+	background: #FFF;
+	box-shadow: 0px 0px 8px #DDD;
+}
+
+.cast_box img{
+	padding: 8px;
+}
+
+.cast_box_info {
+}
+
+.cast_box_catch {
+	height: 24px;
+	color: #AC0032;
+}
+
+.cast_time {
+	background-color: #EEE;/*出勤時間の背景色*/
+	color: #333;
+}
+
+
+
+.diary_box_catch {
+	height: 24px;
+	color: #AC0032;
+}
+
+.slider_cast{
+	background: rgba(255, 255, 255, 1);
+}
+
+/*
+# =================================================================
+# プロフィール
+# =================================================================
+*/
+
+.profile_box_type ul li{
+	border: 1px solid #AC0032;
+}
+
+/*
+# =================================================================
+# 料金システム
+# =================================================================
+*/
+
+.price_box{
+	background-color: rgba(255,255,255,0.7);/*コンテンツの背景色・透明度*/
+}
+
+.price_box .col{
+	text-align: center;
+	font-family: 'Marcellus', serif;
+	font-family: 'Martel', serif;
+	font-style: italic;
+}
+
+.price_box .price_box_title{
+	color: #AC0032;
+}
+
+.price_box .price_box_price{
+}
+
+.price_box_setsumei{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.price_box_bikou{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #555;
+}
+
+.basic_box{
+	border: 1px solid #CCC;
+	background-color: rgba(255,255,255,0.7);/*基本プレイの背景色・透明度*/
+}
+
+.basic_box_non{
+	border: 1px solid #CCC;
+	background-color: rgba(255,255,255,0.7);/*基本プレイの背景色・透明度*/
+	color: #DDD;/*基本プレイ不可能の場合の文字色*/
+}
+
+.option_box{
+	border: 1px solid #CCC;
+	background-color: rgba(255,255,255,0.7);/*オプションプレイの背景色・透明度*/
+}
+
+/*
+# =================================================================
+# パン屑リスト
+# =================================================================
+*/
+
+.breadcrumb-list_wrap{
+	border-top: 1px solid #CCC;
+	background: #F9F9F9;
+}
+
+.breadcrumb-list li a{
+	color: #000;/*リンクの基本色*/
+}
+
+.breadcrumb-list li a:hover,
+.breadcrumb-list li a:active,
+.breadcrumb-list li a:focus{
+	color: #000;/*リンクホバーの基本色*/
+}
+
+
+/*
+# =================================================================
+# フッター
+# =================================================================
+*/
+
+/*フッター*/
+.footer_wrap{
+	background: #FFF;
+	font-size: 1.4rem;
+	line-height: 1.8em;
+	color: #333;/*文字の基本色*/
+ 	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+}
+
+/*三角*/
+.footer-navi li a::before{
+	border-left-color: #AC0032;
+}
+
+.footer_wrap a{
+	color: #333;/*リンクの基本色*/
+}
+
+.footer_wrap a:hover,
+.footer_wrap a:active,
+.footer_wrap a:focus{
+	color: #333;/*リンクホバーの基本色*/
+}
+
+/*コピーライト*/
+.copyright_wrap{
+	padding: 10px;
+	background-color: #000;
+	color: #FFF;/*基本色*/
+}
+
+.copyright_wrap a,
+.copyright_wrap a:hover,
+.copyright_wrap a:active,
+.copyright_wrap a:focus{
+	color: #FFF;/*リンクの基本色*/
+}
+
+hr {
+	height: 1px;
+	border: none;
+	border-top: 1px #AAA solid;
+}
+
+/*スマホ用最下部メニュー*/
+
+.footer-panel ul{
+	border-left: 1px solid #CCC;
+	border-top: 1px solid #CCC;
+}
+
+.footer-panel li{
+	border-right: 1px solid #CCC;
+}
+
+.footer-panel li a{
+	color: #333;
+}
+
+.color_tel {
+	background-color: #FFF;
+}
+.color_line {
+	background-color: #FFF;
+}
+.color_top {
+	background-color: #FFF;
+}
+
+/*
+# =================================================================
+# 画像拡大エフェクト
+# =================================================================
+*/
+
+figure {
+	overflow: hidden;
+}
+figure img {
+	transition: .3s;
+}
+a:hover figure img {
+	transform: scale(1.05);
+}
+/*
+     FILE ARCHIVED ON 20:52:53 Mar 21, 2023 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:24:27 Apr 26, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.937
+  exclusion.robots: 0.035
+  exclusion.robots.policy: 0.028
+  esindex: 0.007
+  cdx.remote: 47.214
+  LoadShardBlock: 90.155 (3)
+  PetaboxLoader3.datanode: 94.827 (5)
+  PetaboxLoader3.resolve: 69.599 (2)
+  load_resource: 817.313
+  loaddict: 738.176
 */
