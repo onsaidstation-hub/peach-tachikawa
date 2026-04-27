@@ -1,0 +1,84 @@
+RENAME: 縺ｪ縺ｪ.jpg -> なな.jpg
+OK	なな	なな.jpg
+RENAME: 縺_縺_.jpg -> うた.jpg
+OK	うた	うた.jpg
+RENAME: 繧_縺_.jpg -> ゆき.jpg
+OK	ゆき	ゆき.jpg
+RENAME: 縺ｲ縺ｳ縺_.jpg -> ひびき.jpg
+OK	ひびき	ひびき.jpg
+RENAME: 縺ｲ縺ｪ.jpg -> ひな.jpg
+OK	ひな	ひな.jpg
+RENAME: 縺阪ｉ.jpg -> きら.jpg
+OK	きら	きら.jpg
+RENAME: 縺輔→.jpg -> さと.jpg
+OK	さと	さと.jpg
+RENAME: 縺ｾ縺ｪ縺_.jpg -> まなか.jpg
+OK	まなか	まなか.jpg
+RENAME: 縺_縺ｿ.jpg -> うみ.jpg
+OK	うみ	うみ.jpg
+RENAME: 繧ゅｂ.jpg -> もも.jpg
+OK	もも	もも.jpg
+RENAME: 縺薙％.jpg -> ここ.jpg
+OK	ここ	ここ.jpg
+RENAME: 繧ゅ°.jpg -> もか.jpg
+OK	もか	もか.jpg
+RENAME: 縺ゅｄ縺ｭ.jpg -> あやね.jpg
+OK	あやね	あやね.jpg
+RENAME: 縺ｲ縺ｪ縺_.jpg -> ひなた.jpg
+OK	ひなた	ひなた.jpg
+RENAME: 縺輔↑.jpg -> さな.jpg
+OK	さな	さな.jpg
+RENAME: 縺吶★.jpg -> すず.jpg
+OK	すず	すず.jpg
+RENAME: 繧ゅｂ縺_.jpg -> ももか.jpg
+OK	ももか	ももか.jpg
+RENAME: 繧ゅ∴.jpg -> もえ.jpg
+OK	もえ	もえ.jpg
+RENAME: 縺薙％繧_.jpg -> こころ.jpg
+OK	こころ	こころ.jpg
+OK	ゆう	ゆう.jpg
+RENAME: 繧翫°.jpg -> りか.jpg
+OK	りか	りか.jpg
+RENAME: 繧ゅ↑.jpg -> もな.jpg
+OK	もな	もな.jpg
+OK	ゆあ	ゆあ.jpg
+RENAME: 縺輔ｄ.jpg -> さや.jpg
+OK	さや	さや.jpg
+RENAME: 繧九↑.jpg -> るな.jpg
+OK	るな	るな.jpg
+RENAME: 縺ｾ縺ｲ繧_.jpg -> まひろ.jpg
+OK	まひろ	まひろ.jpg
+RENAME: 繧九＞.jpg -> るい.jpg
+OK	るい	るい.jpg
+RENAME: 縺ゅ°繧_.jpg -> あかり.jpg
+OK	あかり	あかり.jpg
+RENAME: 縺ｿ縺_.jpg -> みこ.jpg
+OK	みこ	みこ.jpg
+RENAME: 繧√≠.jpg -> めあ.jpg
+OK	めあ	めあ.jpg
+RENAME: 縺ｻ縺ｮ縺_.jpg -> ほのか.jpg
+OK	ほのか	ほのか.jpg
+RENAME: 繧翫ｓ.jpg -> りん.jpg
+OK	りん	りん.jpg
+RENAME: 縺九↑縺ｮ.jpg -> かなの.jpg
+OK	かなの	かなの.jpg
+RENAME: 縺ｾ繧翫↑.jpg -> まりな.jpg
+OK	まりな	まりな.jpg
+OK	うい	うい.jpg
+RENAME: 縺輔≠繧_.jpg -> さあや.jpg
+OK	さあや	さあや.jpg
+OK	ゆい	ゆい.jpg
+RENAME: 縺ゅ∩.jpg -> あみ.jpg
+OK	あみ	あみ.jpg
+RENAME: 縺ｪ縺_.jpg -> なお.jpg
+OK	なお	なお.jpg
+RENAME: 繧後＞縺ｪ.jpg -> れいな.jpg
+OK	れいな	れいな.jpg
+OK	みお	みお.jpg
+RENAME: 縺吶＞.jpg -> すい.jpg
+OK	すい	すい.jpg
+OK	みか	みか.jpg
+RENAME: 縺ｾ縺_.jpg -> まき.jpg
+OK	まき	まき.jpg
+
+リネーム: 38件
