@@ -1,0 +1,28 @@
+{
+  "redirects": [
+    {
+      "source": "/profile/",
+      "has": [{"type": "query", "key": "id", "value": "38"}],
+      "destination": "/cast/ゆい/",
+      "permanent": true
+    },
+    {
+      "source": "/profile/",
+      "has": [{"type": "query", "key": "id", "value": "51"}],
+      "destination": "/cast/かりん/",
+      "permanent": true
+    },
+    {
+      "source": "/profile/",
+      "has": [{"type": "query", "key": "id", "value": "2"}],
+      "destination": "/cast/うみ/",
+      "permanent": true
+    },
+    {
+      "source": "/profile/",
+      "has": [{"type": "query", "key": "id", "value": "34"}],
+      "destination": "/cast/もか/",
+      "permanent": true
+    }
+  ]
+}
