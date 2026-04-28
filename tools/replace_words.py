@@ -1,6 +1,6 @@
 """
 replace_words.py
-cast/ 以下の .html ファイル内のコード語を実際の語句に置換するスクリプト
+cast/ および reviews/ 以下の .html ファイル内のコード語を実際の語句に置換するスクリプト
 
 置換テーブル:
   AA → クンニ / BB → 射精  / CC → 陰茎 / DD → 洗体  / EE → 手コキ
@@ -14,8 +14,12 @@ from pathlib import Path
 # ----------------------------------------------------------------
 # 設定
 # ----------------------------------------------------------------
-CAST_DIR = Path(r'E:\ドキュメント\onsaid\Claude\salvage\peach-tachikawa\cast')
-BACKUP_DIR = Path(r'E:\ドキュメント\onsaid\Claude\salvage\peach-tachikawa\tools\backup')
+BASE = Path(r'E:\ドキュメント\onsaid\Claude\salvage\peach-tachikawa')
+TARGET_DIRS = [
+    BASE / 'cast',
+    BASE / 'reviews',
+]
+BACKUP_DIR = BASE / 'tools' / 'backup'
 
 REPLACE_TABLE = {
     'AA': 'クンニ',
@@ -38,15 +42,17 @@ print('=' * 60)
 print('replace_words.py — コード語置換ツール')
 print('=' * 60)
 
-html_files = sorted(CAST_DIR.rglob('*.html'))
+html_files = sorted(
+    f for d in TARGET_DIRS for f in d.rglob('*.html')
+)
 
 if not html_files:
-    print(f'\n[ERROR] HTMLファイルが見つかりませんでした: {CAST_DIR}')
+    print(f'\n[ERROR] HTMLファイルが見つかりませんでした: {TARGET_DIRS}')
     exit(1)
 
 print(f'\n【対象ファイル一覧】 ({len(html_files)}件)')
 for f in html_files:
-    print(f'  {f.relative_to(CAST_DIR.parent)}')
+    print(f'  {f.relative_to(BASE)}')
 
 # ----------------------------------------------------------------
 # STEP 2: 各コードの出現箇所数を集計
@@ -100,8 +106,8 @@ print(f'\n[1/2] バックアップ中 → {BACKUP_DIR}')
 BACKUP_DIR.mkdir(parents=True, exist_ok=True)
 
 for fpath in html_files:
-    # CAST_DIR からの相対パスをそのまま backup/ 以下に再現
-    rel = fpath.relative_to(CAST_DIR)
+    # BASE からの相対パスをそのまま backup/ 以下に再現
+    rel = fpath.relative_to(BASE)
     dest = BACKUP_DIR / rel
     dest.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(fpath, dest)
@@ -131,7 +137,7 @@ for fpath in html_files:
         fpath.write_text(new_content, encoding='utf-8')
         replaced_files += 1
         replaced_total += file_replaced
-        rel = fpath.relative_to(CAST_DIR.parent)
+        rel = fpath.relative_to(BASE)
         print(f'  更新: {rel}  ({file_replaced}箇所)')
 
 # ----------------------------------------------------------------
