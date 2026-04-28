@@ -41,12 +41,13 @@ JR立川駅北口徒歩5分・南口徒歩6分<br><span>電話番号</span> <a h
 <div class="gnav_inner">
 <ul class="gnav_cont">
 <li><a href="../../"><div class="show-pc"><span class="f12em eng">TOP PAGE</span><br></div>トップページ</a></li>
-<li><a href="../../schedule/"><div class="show-pc"><span class="f12em eng">SCHEDULE</span><br></div>出勤情報</a></li>
+<li><a href="../../reviews/"><div class="show-pc"><span class="f12em eng">REVIEW</span><br></div>風俗口コミレビュー</a></li>
 <li><a href="../../cast/"><div class="show-pc"><span class="f12em eng">THERAPIST</span><br></div>セラピスト</a></li>
 <li><a href="../../price/"><div class="show-pc"><span class="f12em eng">PRICE</span><br></div>料金システム</a></li>
 <li><a href="../../event/"><div class="show-pc"><span class="f12em eng">EVENT</span><br></div>イベント</a></li>
 <li><a href="../../access/"><div class="show-pc"><span class="f12em eng">ACCCESS</span><br></div>アクセス</a></li>
 <li><a href="../../recruit/"><div class="show-pc"><span class="f12em eng">RECRUIT</span><br></div>求人情報</a></li>
+<li><a href="../../schedule/"><div class="show-pc"><span class="f12em eng">SCHEDULE</span><br></div>出勤情報</a></li>
 </ul>
 </div>
 <div class="gnav_btn_wrap">
@@ -101,6 +102,37 @@ JR立川駅北口徒歩5分・南口徒歩6分<br><span>電話番号</span> <a h
 </section>
 </div>
 
+
+<div class="section_wrap">
+<section class="section">
+<div class="inner" style="padding:20px 0; border-top:2px solid #f0a0b0;">
+<h3 class="f14em" style="margin-bottom:16px; color:#c06070;">新しいスレッドを立てる</h3>
+<div id="new-thread-form" style="background:#fdf5f6; border:1px solid #f0c0c8; border-radius:8px; padding:20px;">
+<div style="margin-bottom:12px;">
+<label style="display:block; font-size:0.9em; color:#555; margin-bottom:4px;">お店の名前</label>
+<input type="text" id="shop-name" placeholder="店舗名を入力" style="width:100%; padding:8px 12px; border:1px solid #ddd; border-radius:4px; font-size:0.95em; box-sizing:border-box;">
+</div>
+<div style="margin-bottom:12px;">
+<label style="display:block; font-size:0.9em; color:#555; margin-bottom:4px;">女の子の名前</label>
+<input type="text" id="cast-name-input" placeholder="セラピスト名を入力" value="ひな" style="width:100%; padding:8px 12px; border:1px solid #ddd; border-radius:4px; font-size:0.95em; box-sizing:border-box;">
+</div>
+<div style="margin-bottom:16px;">
+<label style="display:block; font-size:0.9em; color:#555; margin-bottom:4px;">口コミ内容</label>
+<textarea id="review-body" rows="5" placeholder="口コミ・体験談を入力してください" style="width:100%; padding:8px 12px; border:1px solid #ddd; border-radius:4px; font-size:0.95em; box-sizing:border-box; resize:vertical;"></textarea>
+</div>
+<div style="text-align:center;">
+<button onclick="submitReview()" style="background:#c06070; color:#fff; border:none; padding:10px 32px; border-radius:4px; font-size:1em; cursor:pointer;">投稿する</button>
+</div>
+<div id="submit-msg" style="display:none; text-align:center; margin-top:12px; color:#888; font-size:0.9em;">現在準備中です</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+function submitReview() {
+  document.getElementById('submit-msg').style.display = 'block';
+}
+</script>
 <div class="section_wrap">
 <section class="section">
 <div class="inner al-c">
