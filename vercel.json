@@ -23,6 +23,24 @@
       "has": [{"type": "query", "key": "id", "value": "34"}],
       "destination": "/cast/もか/",
       "permanent": true
+    },
+    {
+      "source": "/profile/",
+      "has": [{"type": "query", "key": "id", "value": "4"}],
+      "destination": "/cast/きら/",
+      "permanent": true
+    },
+    {
+      "source": "/profile/",
+      "has": [{"type": "query", "key": "id", "value": "9"}],
+      "destination": "/cast/なつめ/",
+      "permanent": true
+    },
+    {
+      "source": "/profile/",
+      "has": [{"type": "query", "key": "id", "value": "1"}],
+      "destination": "/cast/もも/",
+      "permanent": true
     }
   ]
 }
