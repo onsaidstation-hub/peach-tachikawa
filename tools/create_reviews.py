@@ -128,7 +128,7 @@ JR立川駅北口徒歩5分・南口徒歩6分<br><span>電話番号</span> <a h
 <section class="section">
 <div class="inner al-c" style="padding:20px 0; border-top:1px solid #eee;">
 <p style="margin-bottom:12px; font-size:0.9em; color:#555;">キャスト検索・口コミ情報は</p>
-<a href="https://fuzoku-u.net/" target="_blank" rel="noopener"><button class="btn_02"><span class="f12em">fuzoku-u.net で探す →</span></button></a>
+<a href="https://tachikawa-watch.com/tachikawa/mens-esthe" target="_blank" rel="noopener"><button class="btn_02"><span class="f12em">fuzoku-u.net で探す →</span></button></a>
 </div>
 </section>
 </div>
